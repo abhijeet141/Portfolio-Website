@@ -1,14 +1,21 @@
-import { useState } from "react";
-import { Link } from "react-router-dom"
+import { Sheet, SheetContent, SheetTrigger } from '../components/ui/sheet'
+import { Link } from 'react-router-dom'
+import { useState } from 'react';
+import { CiMenuFries } from "react-icons/ci";
 
-export function Nav(){
+export function MobileNav(){
     const [activeLink, setActiveLink] = useState('');
     const handleLink = (link: string) =>{
         setActiveLink(link);
     }
     return(
-       <nav className="flex gap-8">
-        <Link to={'/'} onClick={()=>{
+        <Sheet>
+           <SheetTrigger className='flex justify-center items-center'>
+                <CiMenuFries className='text-[32px] text-custom-orange'>
+                </CiMenuFries>
+            </SheetTrigger> 
+            <SheetContent className='flex flex-col'>
+            <Link to={'/'} onClick={()=>{
             handleLink('/');
         }} className={`${activeLink === '/' ? 'text-custom-orange border-b-2 border-black' : 'text-black'} capitalize font-medium transition-all`}>
             Home
@@ -38,6 +45,12 @@ export function Nav(){
         }} className={`${activeLink === '/resume' ? 'text-custom-orange border-b-2 border-black' : 'text-black'} capitalize font-medium transition-all`}>
             Resume
         </Link>
-       </nav>
+        <Link to={'/contact'} onClick={()=>{
+            handleLink('/contact');
+        }} className={`${activeLink === '/contact' ? 'text-custom-orange border-b-2 border-black' : 'text-black'} capitalize font-medium transition-all`}>
+            Contact
+        </Link>
+            </SheetContent>
+        </Sheet>
     )
 }

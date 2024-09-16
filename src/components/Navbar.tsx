@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import { Button } from "./ui/button"
 import { Nav } from "./Nav"
+import { MobileNav } from "./MobileNav"
 export function Navbar(){
     return(
         <header className="py-8 xl:py-12">
@@ -13,11 +14,11 @@ export function Navbar(){
                 <div className="hidden xl:flex items-center gap-8">
                 <Nav></Nav>
                 <Link to={'/contact'}>
-                <Button className="border-black">Let's Chat</Button>
+                <Button variant={"orange"}>Let's Chat</Button>
                 </Link>
                 </div>
                 <div className="xl:hidden">
-                    Mobile Nav
+                    <MobileNav></MobileNav>
                 </div>
             </div>
         </header>

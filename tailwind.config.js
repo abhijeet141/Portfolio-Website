@@ -27,6 +27,8 @@ export default {
   		},
   		colors: {
         'custom-orange': '#FC2E20',
+        'red-orange': '#FF4500',
+        'blue': '#4B7BF5'
       }
   	}
   },

@@ -4,10 +4,9 @@ import {Navbar} from './components/Navbar'
 import { Home } from './pages/Home'
 import { About } from './pages/About'
 import { Experience } from './pages/Experience'
-import { Projects } from './pages/projects'
 import { Skills } from './pages/Skills'
-import { Resume } from './pages/Resume'
 import { Contact } from './pages/Contact'
+import { Projects } from './pages/Projects'
 function App() {
   return (
     <BrowserRouter>
@@ -19,7 +18,6 @@ function App() {
           <Route path='/experience' element={<Experience></Experience>}></Route>
           <Route path='/projects' element={<Projects></Projects>}></Route>
           <Route path='/skills' element={<Skills></Skills>}></Route>
-          <Route path='/resume' element={<Resume></Resume>}></Route>
           <Route path='/contact' element={<Contact></Contact>}></Route>
           <Route path='*' element={<Navigate to='/' replace />} />        
         </Routes>

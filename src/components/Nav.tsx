@@ -33,11 +33,6 @@ export function Nav(){
         }} className={`${activeLink === '/experience' ? 'text-custom-orange border-b-2 border-black' : 'text-black'} capitalize font-medium transition-all`}>
             Experience
         </Link>
-        <Link to={'/resume'} onClick={()=>{
-            handleLink('/resume');
-        }} className={`${activeLink === '/resume' ? 'text-custom-orange border-b-2 border-black' : 'text-black'} capitalize font-medium transition-all`}>
-            Resume
-        </Link>
        </nav>
     )
 }

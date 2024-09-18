@@ -9,59 +9,73 @@ const skills = {
   skillList: [
     {
       icon: <FaHtml5 />,
-      name: "HTML5"
+      name: "HTML5",
+      style: "#e34c26"
     },
     {
       icon: <FaCss3 />,
-      name: "CSS3"
+      name: "CSS3",
+      style: "#264de4"
     },
     {
       icon: <FaJs />,
-      name: "JavaScript"
+      name: "JavaScript",
+      style: "#f0db4f"
     },
     {
       icon: <FaReact />,
-      name: "React"
+      name: "React",
+      style: "#61dafb"
     },
     {
       icon: <FaNodeJs />,
-      name: "Node.js"
+      name: "Node.js",
+      style: "#68a063"
     },
     {
       icon: <FaGitAlt />,
-      name: "Git"
+      name: "Git",
+      style: "#f1502f"
     },
     {
       icon: <SiTypescript />,
-      name: "TypeScript"
+      name: "TypeScript",
+      style: "#007acc"
     },
     {
       icon: <SiTailwindcss />,
-      name: "Tailwind CSS"
+      name: "Tailwind CSS",
+      style: "#38b2ac"
     },
     {
       icon: <SiFastapi />,
-      name: "FastAPI"
+      name: "FastAPI",
+      style: "#009688"
     },
     {
       icon: <TbBrandCpp />,
-      name: "C++"
+      name: "C++",
+      style: "#00599C"
     },
     {
       icon: <TbFileTypeSql />,
-      name: "SQL"
+      name: "SQL",
+      style: "#f29111"
     },
     {
       icon: <SiMongodb />,
-      name: "MongoDB"
+      name: "MongoDB",
+      style: "#47A248"
     },
     {
       icon: <SiExpress />,
-      name: "Express.js"
+      name: "Express.js",
+      style: "#404d59"
     },
     {
       icon: <SiCloudflareworkers />,
-      name: "Cloudflare Workers"
+      name: "Cloudflare Workers",
+      style: "#f38020"
     }
   ]
 };
@@ -78,7 +92,7 @@ export function Skills(){
                     return <li key={index}><TooltipProvider delayDuration={100}>
                         <Tooltip>
                             <TooltipTrigger className="w-full h-[150px] bg-gray-100 rounded-xl flex justify-center items-center">
-                                <div className="text-6xl transition-all duration-300">{item.icon}</div>
+                                <div className="text-6xl transition-all duration-300" style={{color: item.style}}>{item.icon}</div>
                             </TooltipTrigger>
                             <TooltipContent>
                                 <p>{item.name}</p>

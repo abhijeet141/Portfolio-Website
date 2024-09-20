@@ -24,8 +24,8 @@ const project = [{
         name: 'CSS3'
     }],
     image: Image1,
-    livelink: '',
-    github: ''
+    livelink: 'https://crop-foresight-front-end.vercel.app/',
+    github: 'https://github.com/abhijeet141/CropForesight'
 },
 {
     id: '02',
@@ -39,12 +39,12 @@ const project = [{
         name: 'TalwindCSS'
     },],
     image: Image2,
-    livelink: '',
-    github: ''
+    livelink: 'https://money-wallet-frontend-six.vercel.app/',
+    github: 'https://github.com/abhijeet141/MoneyWallet'
 },
 {
     id: '03',
-    category: 'frontend',
+    category: 'backend',
     description: 'This project provides the backend infrastructure for the Educart platform. It handles user authentication, data storage, and API endpoints for various functionalities.',
     stack: [{
         name: 'Express'
@@ -52,8 +52,7 @@ const project = [{
         name: 'Zod'
     },],
     image: Image3,
-    livelink: '',
-    github: ''
+    github: 'https://github.com/abhijeet141/EduCart-Backend'
 },
 {
     id: '04',
@@ -67,8 +66,8 @@ const project = [{
         name: 'JavaScript'
     },],
     image: Image4,
-    livelink: '',
-    github: ''
+    livelink: 'https://github.com/abhijeet141/sorting-visualizer',
+    github: 'https://abhijeet-sorting-visualizer.netlify.app/'
 }
 ]
 

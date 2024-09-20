@@ -11,7 +11,7 @@ export function Home(){
                         <h1 className="mb-6">Hi! I Am <span className="block xl:relative xl:inline-block"><Button variant={"blue"} className="h-14 w-13 text-lg xl:absolute xl:top-[-3.2rem] cursor-default">Software Developer</Button> </span><span className="block my-4">Abhijeet Sinha</span></h1>
                         <p className="max-w-[500px] mb-9 text-black/80">I specialize in building dynamic, full-stack applications and I am Proficient in various programming languages and technologies.</p>
                     <div className="flex flex-col xl:flex-row items-center gap-8">
-                        <a href="https://drive.google.com/file/d/1KynHSM2k0tcjaV009uTiIFb-9tt53l-s/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                        <a href="https://drive.google.com/file/d/1krCucLDUDuMtlwrr_BUDCiFVsxrGvh8t/view" target="_blank" rel="noopener noreferrer">
                         <Button variant={'orange'} size={'lg'}>
                         <span>Download Resume</span>
                         <FiDownload className="text-xl pl-2"></FiDownload>

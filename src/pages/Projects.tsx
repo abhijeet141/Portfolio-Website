@@ -3,25 +3,25 @@ import {Swiper, SwiperSlide} from "swiper/react"
 import "swiper/css"
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 import { Button } from "@/components/ui/button";
-import Image1 from '../assets/image1.png'
-import Image2 from '../assets/image2.png'
-import Image3 from '../assets/image3.png'
+import Image1 from '../assets/project1.png'
+import Image2 from '../assets/project2.png'
+import Image3 from '../assets/project3.png'
 import Image4 from '../assets/image4.png'
 import { WorkSliderBtns } from "@/components/WorkSliderBtns";
 
 
 const project = [{
     id: '01',
-    category: 'full stack',
-    description: 'CropForesight is a powerful crop recommendation website that helps farmers and agriculture enthusiasts make informed decisions about the best crop to cultivate on a given land. In addition, CropForesight employs an AlexNet model for the classification of tomato leaf diseases.',
+    category: 'CropForesight',
+    description: 'CropForesight is an intelligent platform designed to help farmers make informed decisions. It uses a Logistic Regression model to recommend crops based on factors like soil composition, pH, and rainfall. The app also includes an AlexNet-powered deep learning model for detecting tomato plant diseases through image uploads via Cloudinary. Built with a responsive ReactJS frontend and a FastAPI backend, the project attracted contributions from over 60 developers, fostering strong community engagement across two repositories.',
     stack: [{
         name: 'React'
     },{
+        name: 'JavaScript'
+    },{
+        name: 'CSS'
+    },{
         name: 'FastAPI'
-    },{
-        name: 'AlexNet'
-    },{
-        name: 'CSS3'
     }],
     image: Image1,
     livelink: 'https://crop-foresight-front-end.vercel.app/',
@@ -29,25 +29,29 @@ const project = [{
 },
 {
     id: '02',
-    category: 'full stack',
-    description: 'This project is a full-stack bank application that allows users to manage their accounts, send money, and access their balances.',
+    category: 'BlogVerse',
+    description: 'BlogVerse is a full-stack blogging platform that allows users to create, publish, and read blog posts. The frontend is built with React, TypeScript, and Tailwind CSS, offering a user-friendly interface. The serverless backend, powered by Hono and Cloudflare Workers, ensures fast and scalable content management. Key features include secure user authentication, blog post management, reading time calculation, and author-specific pages. Prisma ORM and PostgreSQL are used for efficient data storage and management, while Zod ensures schema validation for data integrity.',
     stack: [{
         name: 'React'
     },{
-        name: 'Express'
+        name: 'TypeScript'
+    },{
+        name: 'Hono'
     },{
         name: 'TalwindCSS'
     },],
     image: Image2,
-    livelink: 'https://money-wallet-frontend-six.vercel.app/',
-    github: 'https://github.com/abhijeet141/MoneyWallet'
+    livelink: 'https://blogverse-drab.vercel.app/',
+    github: 'https://github.com/abhijeet141/BlogVerse'
 },
 {
     id: '03',
-    category: 'backend',
-    description: 'This project provides the backend infrastructure for the Educart platform. It handles user authentication, data storage, and API endpoints for various functionalities.',
+    category: 'EduCart Backend',
+    description: 'EduCart is a comprehensive backend solution for an educational platform, designed to facilitate user authentication, data management, and API interactions. Built using Express.js and TypeScript, this robust backend supports secure user logins through JWT, while ensuring data integrity with Zod for validation. The application leverages MongoDB for efficient storage of user accounts and course information, enabling smooth management and access to educational content.',
     stack: [{
         name: 'Express'
+    },{
+        name: 'TypeScript'
     },{
         name: 'Zod'
     },],
@@ -56,18 +60,18 @@ const project = [{
 },
 {
     id: '04',
-    category: 'frontend',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aperiam consectetur tempore rerum placeat dolores!',
+    category: 'Sorting Visualizer',
+    description: 'The Sorting Visualizer is an interactive tool developed with React and TypeScript that allows users to visualize the workings of various sorting algorithms. This project features multiple sorting methods, including bubble sort, insertion sort, merge sort, and quick sort, enabling users to compare their efficiency and understand their mechanics in real-time.',
     stack: [{
-        name: 'Html5'
+        name: 'React'
     },{
-        name: 'CSS3'
+        name: 'TypeScript'
     },{
-        name: 'JavaScript'
+        name: 'CSS'
     },],
     image: Image4,
-    livelink: 'https://github.com/abhijeet141/sorting-visualizer',
-    github: 'https://abhijeet-sorting-visualizer.netlify.app/'
+    livelink: 'https://abhijeet-sorting-visualizer.netlify.app/',
+    github: 'https://github.com/abhijeet141/sorting-visualizer'
 }
 ]
 
@@ -83,9 +87,9 @@ export function Projects(){
                         {projects.id}
                     </div>
                     <h2 className="text-[42px] font-bold leading-none hover:text-custom-orange transition-all duration-500 capitalize">
-                        {projects.category} Project
+                        {projects.category}
                     </h2>
-                    <p className="text-black/60">
+                    <p className="text-black/60 text-justify text-sm">
                         {projects.description}
                     </p>
                     <ul className="flex gap-4 border-b-2">
@@ -128,7 +132,7 @@ export function Projects(){
                                 <div className="xl:mt-12 md:mt-28">
                                     <div></div>
                                     <div>
-                                    <img src={item.image} alt=""/>
+                                    <img className="" src={item.image} alt=""/>
                                     </div>
                                 </div>
                             </SwiperSlide>
